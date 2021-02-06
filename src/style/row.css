@@ -1,0 +1,45 @@
+.row{
+    margin: 2rem 1.5rem 0rem 1.5rem;
+    /* overflow-x: hidden; */
+}
+
+@media screen and (min-width: 376px) and (max-width: 996px){
+    .row{
+        margin: 2rem 2.7rem 0 2.7rem;
+    }
+}
+
+@media screen and (min-width: 997px){
+    .row{
+        margin: 2rem 6rem 0 6rem;
+    }   
+}
+.row .row__posters .row__poster:hover{
+    transform: scale(1.1);
+    transition: all .7s;    
+}
+
+.row .row__posters::-webkit-scrollbar{
+    display: none;
+}
+.row .row__posters{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 10px;
+    cursor: pointer;
+
+    -ms-overflow-style: none; /* IE 11 */
+    scrollbar-width: none; /* Firefox 64 */
+}
+
+.row .row__posters .row__poster{
+    max-height: 100px;
+    margin-right: .4rem;
+    object-fit: contain;
+    width: 100%;
+}
+
+.row .row__posters .row__large__poster{
+    max-height: 250px; 
+}
